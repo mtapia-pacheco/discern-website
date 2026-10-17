@@ -18,10 +18,10 @@
       <a class="brand" href="#top" aria-label="DISCERN home">DISCERN</a>
       <nav class="desktop-nav" aria-label="Primary navigation">
         <a href="#about">About</a>
-        <a href="#framework">Framework</a>
-        <a href="#findings">Findings</a>
         <a href="#coverage">Coverage</a>
+        <a href="#framework">Framework</a>
         <a href="#results">Results</a>
+        <a href="#findings">Findings</a>
         <a href="#resources">Resources</a>
       </nav>
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
@@ -30,10 +30,10 @@
     </div>
     <nav class="mobile-nav" id="mobile-nav" hidden aria-label="Mobile navigation">
       <a href="#about">About</a>
-      <a href="#framework">Framework</a>
-      <a href="#findings">Findings</a>
       <a href="#coverage">Coverage</a>
+      <a href="#framework">Framework</a>
       <a href="#results">Results</a>
+      <a href="#findings">Findings</a>
       <a href="#resources">Resources</a>
     </nav>
   </header>
@@ -46,8 +46,21 @@
           <h1>Can AI agents work like scientists?</h1>
           <p class="lead">DISCERN evaluates whether scientific AI agents can do more than complete a task. It tests whether they can judge data quality, verify analyses, and reason from evidence.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#framework">Explore the benchmark</a>
+            <a class="button button-primary" href="#coverage">Explore the benchmark</a>
             <a class="button button-secondary" href="https://arxiv.org/abs/2609.33357" target="_blank" rel="noopener noreferrer">Read the paper</a>
+          </div>
+          <div class="hero-authors" role="group" aria-labelledby="authors-label">
+            <p class="mini-label" id="authors-label">Authors</p>
+            <ul class="author-list" aria-describedby="author-affiliations">
+              <li>Nan Huang<sup>1</sup></li>
+              <li>Mario Tapia-Pacheco<sup>1</sup></li>
+              <li>Kun Zhou<sup>1</sup></li>
+              <li>Yiming Huang<sup>1</sup></li>
+              <li>Kevin José Barrientos Díaz<sup>2</sup></li>
+              <li>Tiffany Amariuta<sup>1,†</sup></li>
+              <li>Jingbo Shang<sup>1,†</sup></li>
+            </ul>
+            <p class="author-affiliations" id="author-affiliations"><span><sup>1</sup> University of California San Diego</span><span><sup>2</sup> Independent Researcher</span><span>† Co-corresponding authors</span></p>
           </div>
         </div>
         <div class="hero-panel" aria-label="DISCERN overview">
@@ -97,6 +110,41 @@
       </div>
     </section>
 
+    <section class="section" id="coverage">
+      <div class="container">
+        <div class="section-heading row-heading">
+          <div>
+            <p class="section-label">Benchmark coverage</p>
+            <h2>Five scientific domains. Eight life-science tracks.</h2>
+            <p>203 benchmark tasks built around real scientific workflows, from genetic variation to protein stability.</p>
+          </div>
+        </div>
+        <div class="domain-grid">
+          <section class="track-card domain-card" aria-labelledby="domain-genetics">
+            <h3 id="domain-genetics"><svg class="domain-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 3c0 7 8 11 8 18M16 3c0 7-8 11-8 18M9 6h6M10 10h4M10 14h4M9 18h6"/></svg><span>Genetics</span></h3>
+            <ul><li>Genome-wide association studies (GWAS)</li><li>Clinical variant interpretation (ClinVar / ACMG)</li></ul>
+          </section>
+          <section class="track-card domain-card" aria-labelledby="domain-transcriptomics">
+            <h3 id="domain-transcriptomics"><svg class="domain-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 5h5l3 3h10M3 10h3l3 3h12M3 15h5l3 3h10"/></svg><span>Transcriptomics</span></h3>
+            <ul><li>Bulk RNA-seq</li><li>Single-cell RNA-seq</li></ul>
+          </section>
+          <section class="track-card domain-card" aria-labelledby="domain-regulatory">
+            <h3 id="domain-regulatory"><svg class="domain-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 15h4l3-5 4 10 3-5h6M17 2l1 3 3 1-3 1-1 3-1-3-3-1 3-1Z"/></svg><span>Regulatory genomics</span></h3>
+            <ul><li>CRISPR perturbation screening</li><li>Enhancer activity</li></ul>
+          </section>
+          <section class="track-card domain-card" aria-labelledby="domain-epigenomics">
+            <h3 id="domain-epigenomics"><svg class="domain-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m2 13 2-3m4.2.2 1.6 3.6m4.4 0 1.6-3.6M20 10l2 3"/><circle cx="6" cy="8" r="3"/><circle cx="12" cy="16" r="3"/><circle cx="18" cy="8" r="3"/></svg><span>Epigenomics</span></h3>
+            <ul><li>Chromatin regulation (histone / gene expression)</li></ul>
+          </section>
+          <section class="track-card domain-card" aria-labelledby="domain-protein">
+            <h3 id="domain-protein"><svg class="domain-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 6h8m1 2-3 8m-3 1-5-2m-1.5-3 1-4m1.6-.2 4.8 8.4"/><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="13" cy="18" r="2"/><circle cx="4" cy="14" r="2"/></svg><span>Protein biophysics</span></h3>
+            <ul><li>Protein stability and structure</li></ul>
+          </section>
+        </div>
+        <p class="footnote">A preliminary physics extension is reported separately and excluded from the eight-track life-science core.</p>
+      </div>
+    </section>
+
     <section class="section" id="framework">
       <div class="container">
         <div class="section-heading row-heading">
@@ -106,6 +154,20 @@
             <p> From data quality to evidence-grounded hypothesis generation. </p>
           </div>
         </div>
+
+        <section class="benchmark-overview" aria-labelledby="overview-heading">
+          <h3 id="overview-heading">DISCERN at a glance</h3>
+          <dl class="overview-stats">
+            <div><dt>L1 tasks</dt><dd>79</dd></div>
+            <div><dt>L2 tasks</dt><dd>102</dd></div>
+            <div><dt>L3 scientific worlds</dt><dd>22</dd></div>
+            <div class="overview-total"><dt>Total benchmark tasks</dt><dd>203</dd></div>
+          </dl>
+          <div class="overview-evaluation">
+            <p role="math" aria-label="8 models times 8 life-science tracks times 3 levels equals 192 aggregated model–track–level scores"><span>8 models</span> × <span>8 life-science tracks</span> × <span>3 levels</span> = <strong>192 aggregated scores</strong></p>
+            <a class="figure-source" href="https://arxiv.org/html/2609.33357v1#A4.F11" target="_blank" rel="noopener noreferrer">Figure 11 ↗</a>
+          </div>
+        </section>
 
         <div class="tab-list" role="tablist" aria-label="DISCERN benchmark levels">
           <button class="tab active" id="tab-l1" role="tab" aria-selected="true" aria-controls="panel-l1" data-target="l1">L1 · Data integrity</button>
@@ -155,8 +217,6 @@
           </div>
         </div>
 
-        <p class="footnote">The three levels are independently instantiated and scored.</p>
-
         <figure class="paper-figure" id="paper-figure-2">
           <div class="figure-heading">
             <p class="mini-label">From the paper · Figure 2</p>
@@ -174,119 +234,13 @@
       </div>
     </section>
 
-    <section class="section muted" id="findings">
+    <section class="section results-section" id="results" aria-labelledby="models-heading">
       <div class="container">
-        <div class="section-heading row-heading">
-          <div>
-            <p class="section-label">Key findings</p>
-            <h2>Scientific judgment remains the ultimate bottleneck.</h2>
-            <p> DISCERN reveals that while AI agents can execute code, high-level hypothesis generation remains an unsolved frontier. Perfect-score rates drop sharply as the scientific reasoning demands increase. </p>
-          </div>
-        </div>
-
-        <div class="results-grid">
-          <div class="results-card">
-            <h3>Perfect-score rate by level</h3>
-            <div class="bars">
-              <div class="bar-row">
-                <div class="bar-meta"><strong>L1</strong><span>Data integrity</span></div>
-                <div class="bar-track"><div class="bar-fill" style="--fill: 60.8%"></div></div>
-                <div class="bar-value">60.8%</div>
-              </div>
-              <div class="bar-row">
-                <div class="bar-meta"><strong>L2</strong><span>Analysis verification</span></div>
-                <div class="bar-track"><div class="bar-fill" style="--fill: 34.2%"></div></div>
-                <div class="bar-value">34.2%</div>
-              </div>
-              <div class="bar-row">
-                <div class="bar-meta"><strong>L3</strong><span>Scientific reasoning</span></div>
-                <div class="bar-track"><div class="bar-fill" style="--fill: 0.6%"></div></div>
-                <div class="bar-value">0.6%</div>
-              </div>
-            </div>
-          </div>
-          <div class="callout-card">
-            <p class="mini-label">Main takeaway</p>
-            <div class="callout-number">0.6%</div>
-            <h3>Perfect scores at L3.</h3>
-            <p>Even when agents can process data and review analyses, evidence-grounded hypothesis generation remains extremely difficult.</p>
-          </div>
-        </div>
-
-
-        <figure class="paper-figure" id="paper-figure-3">
-          <div class="figure-heading">
-            <p class="mini-label">From the paper · Figure 3</p>
-            <h3 id="figure-title-3">Aggregate scores hide variation across tasks.</h3>
-          </div>
-          <a class="figure-open" href="assets/figures/figure-3-performance.svg" data-figure aria-label="Enlarge Figure 3: Aggregate scores hide variation across tasks.">
-            <img src="assets/figures/figure-3-performance.svg" width="1100" height="500" loading="lazy" decoding="async" alt="Track-level score ranges and a table of model behavior, covering evidence judgment, analysis, hypothesis commitment, novelty, and resource use." />
-            <span class="figure-expand" aria-hidden="true">View figure <span>↗</span></span>
-          </a>
-          <figcaption>
-            <p>A: dots average the eight models; lines span their minimum–maximum scores. B: compare shading within each row only. Darker does not always mean better; novelty is conditional on submitted hypotheses.</p>
-            <a class="figure-source" href="https://arxiv.org/html/2609.33357v1#S4.F3" target="_blank" rel="noopener noreferrer">Figure 3 in the paper ↗</a>
-          </figcaption>
-        </figure>
-
-        <figure class="paper-figure" id="paper-figure-4">
-          <div class="figure-heading">
-            <p class="mini-label">From the paper · Figure 4</p>
-            <h3 id="figure-title-4">Caution, commitment, and novelty differ.</h3>
-          </div>
-          <a class="figure-open" href="assets/figures/figure-4-working-styles.svg" data-figure aria-label="Enlarge Figure 4: Caution, commitment, and novelty differ.">
-            <img src="assets/figures/figure-4-working-styles.svg" width="1100" height="347" loading="lazy" decoding="async" alt="Three panels compare acceptance of clean data, hypothesis production versus novelty, and responses to evidence that conflicts with model priors." />
-            <span class="figure-expand" aria-hidden="true">View figure <span>↗</span></span>
-          </a>
-          <figcaption>
-            <p>A: decisions on clean controls. B: hypothesis participation versus conditional novelty; Astra’s novelty mean uses one hypothesis. C: responses to prior-conflicting evidence, excluding four ineligible outcomes. Abstaining differs from reverting to the prior.</p>
-            <a class="figure-source" href="https://arxiv.org/html/2609.33357v1#S4.F4" target="_blank" rel="noopener noreferrer">Figure 4 in the paper ↗</a>
-          </figcaption>
-        </figure>
-
-        <figure class="paper-figure paper-figure-compact" id="paper-figure-5">
-          <div class="figure-heading">
-            <p class="mini-label">From the paper · Figure 5</p>
-            <h3 id="figure-title-5">Computational habits are more consistent than scientific judgment.</h3>
-          </div>
-          <a class="figure-open" href="assets/figures/figure-5-ranking-consistency.png" data-figure aria-label="Enlarge Figure 5: Computational habits are more consistent than scientific judgment.">
-            <img src="assets/figures/figure-5-ranking-consistency.png" width="236" height="407" loading="lazy" decoding="async" alt="Kendall’s W is highest for token and code use and lower for analytical judgment, evidence assessment, and hypothesis commitment." />
-            <span class="figure-expand" aria-hidden="true">View figure <span>↗</span></span>
-          </a>
-          <figcaption>
-            <p>Higher Kendall’s W means more consistent model rankings across tracks. These values measure ranking agreement, not correlations between metrics or the quality of scientific work.</p>
-            <a class="figure-source" href="https://arxiv.org/html/2609.33357v1#S4.F5" target="_blank" rel="noopener noreferrer">Figure 5 in the paper ↗</a>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="section" id="coverage">
-      <div class="container">
-        <div class="section-heading row-heading">
-          <div>
-            <p class="section-label">Benchmark coverage</p>
-            <h2>Eight life-science tracks.</h2>
-            <p> Built around real scientific workflows across biology and genomics. </p>
-          </div>
-        </div>
-        <div class="track-grid">
-          <div class="track-card">Bulk RNA-seq</div>
-          <div class="track-card">Counterfactual GWAS</div>
-          <div class="track-card">ClinVar / ACMG</div>
-          <div class="track-card">CRISPR screening</div>
-          <div class="track-card">Enhancer activity</div>
-          <div class="track-card">Histone / gene expression</div>
-          <div class="track-card">Protein stability</div>
-          <div class="track-card">Single-cell RNA-seq</div>
-        </div>
-        <p class="footnote">A preliminary physics extension is reported separately and excluded from the eight-track life-science core.</p>
-
-        <section class="model-explorer" id="results" aria-labelledby="models-heading">
+        <div class="model-explorer">
           <div class="results-heading">
             <div>
               <p class="section-label">DISCERN leaderboard</p>
-              <h3 id="models-heading">Results</h3>
+              <h2 id="models-heading">Results</h2>
               <p>Compare scientific performance, token efficiency, and cost across eight evaluated models.</p>
             </div>
             <span class="results-edition">8 models · Life-science core</span>
@@ -506,7 +460,94 @@
             </div>
             <p class="footnote">“Not reported” denotes values omitted from Table 1. Costs use the paper’s dated price estimates and exclude grading, verification, and review.</p>
           </details>
-        </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted" id="findings">
+      <div class="container">
+        <div class="section-heading row-heading">
+          <div>
+            <p class="section-label">Key findings</p>
+            <h2>Scientific judgment remains the ultimate bottleneck.</h2>
+            <p> DISCERN reveals that while AI agents can execute code, high-level hypothesis generation remains an unsolved frontier. Perfect-score rates drop sharply as the scientific reasoning demands increase. </p>
+          </div>
+        </div>
+
+        <div class="results-grid">
+          <div class="results-card">
+            <h3>Perfect-score rate by level</h3>
+            <div class="bars">
+              <div class="bar-row">
+                <div class="bar-meta"><strong>L1</strong><span>Data integrity</span></div>
+                <div class="bar-track"><div class="bar-fill" style="--fill: 60.8%"></div></div>
+                <div class="bar-value">60.8%</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-meta"><strong>L2</strong><span>Analysis verification</span></div>
+                <div class="bar-track"><div class="bar-fill" style="--fill: 34.2%"></div></div>
+                <div class="bar-value">34.2%</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-meta"><strong>L3</strong><span>Scientific reasoning</span></div>
+                <div class="bar-track"><div class="bar-fill" style="--fill: 0.6%"></div></div>
+                <div class="bar-value">0.6%</div>
+              </div>
+            </div>
+          </div>
+          <div class="callout-card">
+            <p class="mini-label">Main takeaway</p>
+            <div class="callout-number">0.6%</div>
+            <h3>Perfect scores at L3.</h3>
+            <p>Even when agents can process data and review analyses, evidence-grounded hypothesis generation remains extremely difficult.</p>
+          </div>
+        </div>
+
+
+        <figure class="paper-figure" id="paper-figure-3">
+          <div class="figure-heading">
+            <p class="mini-label">From the paper · Figure 3</p>
+            <h3 id="figure-title-3">GLM-5.3 scores 100 in protein data integrity but 3.5 in CRISPR analysis verification.</h3>
+          </div>
+          <a class="figure-open" href="assets/figures/figure-3-performance.svg" data-figure aria-label="Enlarge Figure 3: GLM-5.3 scores 100 in protein data integrity but 3.5 in CRISPR analysis verification.">
+            <img src="assets/figures/figure-3-performance.svg" width="1100" height="500" loading="lazy" decoding="async" alt="Track-level score ranges and a table of model behavior, covering evidence judgment, analysis, hypothesis commitment, novelty, and resource use." />
+            <span class="figure-expand" aria-hidden="true">View figure <span>↗</span></span>
+          </a>
+          <figcaption>
+            <p>Scores use a 0–100 rubric. A: dots average the eight models; lines span their minimum–maximum scores. B: compare shading within each row only. Darker does not always mean better; novelty is conditional on submitted hypotheses.</p>
+            <a class="figure-source" href="https://arxiv.org/html/2609.33357v1#S4.F3" target="_blank" rel="noopener noreferrer">Figure 3 in the paper ↗</a>
+          </figcaption>
+        </figure>
+
+        <figure class="paper-figure" id="paper-figure-4">
+          <div class="figure-heading">
+            <p class="mini-label">From the paper · Figure 4</p>
+            <h3 id="figure-title-4">Opus proposes hypotheses more often than Sol, yet their submitted hypotheses have similar average novelty.</h3>
+          </div>
+          <a class="figure-open" href="assets/figures/figure-4-working-styles.svg" data-figure aria-label="Enlarge Figure 4: Opus proposes hypotheses more often than Sol, yet their submitted hypotheses have similar average novelty.">
+            <img src="assets/figures/figure-4-working-styles.svg" width="1100" height="347" loading="lazy" decoding="async" alt="Three panels compare acceptance of clean data, hypothesis production versus novelty, and responses to evidence that conflicts with model priors." />
+            <span class="figure-expand" aria-hidden="true">View figure <span>↗</span></span>
+          </a>
+          <figcaption>
+            <p>A: decisions on clean controls. B: Opus submits hypotheses on 81.0% of eligible tasks versus Sol’s 18.2%, with mean novelty scores of 41.2 and 41.7 among submitted hypotheses. Astra’s novelty mean uses one hypothesis. C: responses to prior-conflicting evidence, excluding four ineligible outcomes. Abstaining differs from reverting to the prior.</p>
+            <a class="figure-source" href="https://arxiv.org/html/2609.33357v1#S4.F4" target="_blank" rel="noopener noreferrer">Figure 4 in the paper ↗</a>
+          </figcaption>
+        </figure>
+
+        <figure class="paper-figure paper-figure-compact" id="paper-figure-5">
+          <div class="figure-heading">
+            <p class="mini-label">From the paper · Figure 5</p>
+            <h3 id="figure-title-5">Computational habits are more consistent than scientific judgment.</h3>
+          </div>
+          <a class="figure-open" href="assets/figures/figure-5-ranking-consistency.png" data-figure aria-label="Enlarge Figure 5: Computational habits are more consistent than scientific judgment.">
+            <img src="assets/figures/figure-5-ranking-consistency.png" width="236" height="407" loading="lazy" decoding="async" alt="Kendall’s W is highest for token and code use and lower for analytical judgment, evidence assessment, and hypothesis commitment." />
+            <span class="figure-expand" aria-hidden="true">View figure <span>↗</span></span>
+          </a>
+          <figcaption>
+            <p>Higher Kendall’s W means more consistent model rankings across tracks. These values measure ranking agreement, not correlations between metrics or the quality of scientific work.</p>
+            <a class="figure-source" href="https://arxiv.org/html/2609.33357v1#S4.F5" target="_blank" rel="noopener noreferrer">Figure 5 in the paper ↗</a>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
